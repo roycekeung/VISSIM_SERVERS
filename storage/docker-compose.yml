@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: docker_storageserver
+    build: .
+    ports:
+      - "5500:5500"
+    restart: always
+    # deploy:
+    #   restart_policy:
+    #     condition: on-failure
+    #     delay: 5s
+    #     max_attempts: 3
+    #     window: 120s
+    env_file: .env
+    logging:
+      driver: json-file
+      options:
+        max-size: "200k"
+        max-file: "10"
+    volumes:
+      - ./storage:/storage
+
+    depends_on:
+      - db
+
+  db:
+    container_name: docker_pg
+    image: postgres:13
+    env_file: .env
+    environment: 
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_URL: postgresql://${POSTGRES_USR}:${POSTGRES_PASSWORD}@localhost/${POSTGRES_DB}
+      
+    ports: 
+      - "5433:5432"
+    volumes:
+      - .C:/Program Files/PostgreSQL/13/data:/var/lib/postgresql/data

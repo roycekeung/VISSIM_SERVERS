@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  que:
+    container_name: docker_messagequeserver
+    build: .
+    restart: on-failure
+    env_file: .env
+    logging:
+      driver: json-file
+      options:
+        max-size: "200k"
+        max-file: "10"
+    volumes:
+      - ./tmp:/tmp
+

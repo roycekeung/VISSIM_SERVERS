@@ -1,0 +1,169 @@
+2022-01-28 08:45:09,889 - app - ERROR - Exception on /pingtest [POST]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-01-28 08:45:26,209 - app - ERROR - Exception on /pingtest [POST]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-01-28 08:48:08,322 - app - ERROR - Exception on /pingtest [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-01-28 08:50:13,815 - app - ERROR - Exception on /pingtest [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-01-28 08:51:04,387 - app - ERROR - Exception on /runstat [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\HKUST\research_project\me\VISSIM_SERVERS\apps\app\controller.py", line 98, in get
+    sleeptime = compute.getsleeptime()
+  File "d:\HKUST\research_project\me\VISSIM_SERVERS\apps\computation\cal.py", line 154, in getsleeptime
+    return RunCal.sleeptime
+AttributeError: type object 'RunCal' has no attribute 'sleeptime'
+2022-01-28 08:52:38,794 - app - ERROR - Exception on /runstat [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\HKUST\research_project\me\VISSIM_SERVERS\apps\app\controller.py", line 98, in get
+    sleeptime = compute.getsleeptime()
+  File "d:\HKUST\research_project\me\VISSIM_SERVERS\apps\computation\cal.py", line 154, in getsleeptime
+    return RunCal.sleeptime
+AttributeError: type object 'RunCal' has no attribute 'sleeptime'
+2022-01-28 08:52:44,329 - app - ERROR - Exception on /pingtest [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-01-28 08:53:08,081 - app - ERROR - Exception on /pingtest [GET]
+Traceback (most recent call last):
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\royce\AppData\Roaming\Python\Python37\site-packages\flask\views.py", line 82, in view
+    self = view.view_class(*class_args, **class_kwargs)  # type: ignore
+TypeError: PingTest() takes no arguments
+2022-02-16 20:03:18,775 - pika.adapters.utils.io_services_utils - ERROR - _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None); sock=<socket.socket fd=1084, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 52659), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-02-16 20:03:18,797 - pika.adapters.base_connection - ERROR - connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)
+2022-02-16 20:03:18,805 - pika.adapters.blocking_connection - ERROR - Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)
+2022-02-16 20:29:49,935 - pika.adapters.utils.io_services_utils - ERROR - _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None); sock=<socket.socket fd=580, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 63400), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-02-16 20:29:49,938 - pika.adapters.base_connection - ERROR - connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)
+2022-02-16 20:29:49,945 - pika.adapters.blocking_connection - ERROR - Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)
+2022-02-16 20:43:52,715 - pika.adapters.utils.io_services_utils - ERROR - _AsyncBaseTransport._produce() failed, aborting connection: error=ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None); sock=<socket.socket fd=1120, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('127.0.0.1', 56958), raddr=('127.0.0.1', 5672)>; Caller's stack:
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+Traceback (most recent call last):
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 1103, in _on_socket_writable
+    self._produce()
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 820, in _produce
+    self._tx_buffers[0])
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 79, in retry_sigint_wrap
+    return func(*args, **kwargs)
+  File "C:\Users\wei\AppData\Local\Programs\Python\Python37\lib\site-packages\pika\adapters\utils\io_services_utils.py", line 861, in _sigint_safe_send
+    return sock.send(data)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2022-02-16 20:43:52,721 - pika.adapters.base_connection - ERROR - connection_lost: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)
+2022-02-16 20:43:52,731 - pika.adapters.blocking_connection - ERROR - Unexpected connection close detected: StreamLostError: ("Stream connection lost: ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",)

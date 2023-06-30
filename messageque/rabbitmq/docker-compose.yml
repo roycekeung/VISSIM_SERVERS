@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  que:
+    container_name: docker_rmq
+    build: .
+    image: rabbitmq:3.9
+    restart: on-failure
+    ports: 
+      - "5673:5673"
+      - "15673:15673"
+    volumes:
+      - ./config/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf

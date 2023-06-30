@@ -1,0 +1,8 @@
+*.md
+*/.git
+*/__pycache__*
+*/logs*
+*/test*
+*.jpg
+*test?.*
+.env

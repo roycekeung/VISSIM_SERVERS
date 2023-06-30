@@ -1,0 +1,22 @@
+## To-do-list Problems required to be fixed :
+1. jobcount in redis, refresh and del; used to check back storage job table to make sure the task finished all genes computing
+2. receiver log callback debug
+3. dispatch, dynamic, ex check of wincom vissim
+4. roundrobbin cycle error,  but random work; ref from lobancer model.py
+5. pop up web browser run slowly noti; type in ip and port to web browser so that can check the application server computation progress
+6. debug (-2146959355, 'Server execution failed', None, None)  
+and 
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+7. find_AlldirInThisFile in cal would cause error if the casename or jobname r wrong; task name need to be unique
+8. addd request of EndTask to the end of example NGA run; purely for databse tracking
+9. add DDL listen and notify in postgresql
+10. audobe pdf reader pop up error debug within vissim
+11. check limit timing on scheduled failed job test
+12. very rarely happens got stuck after the result sent to mq and it indeed recieved and update back to storage and release serv but the app server then got stuck. the last message is [x] output message que is connected.... without showing any errors
+13. average runtime per sim add into database, rough in norm distribution and trim out outlier
+14. password stored hash + salt instead of direct plain password text
+15. log storing change to byte array to save memory
+16. docker need to applied on every server except from app servers
+17. apply nginx to avoid failover
+18. reconstruct runscript file to make a better function calling
+19. vissim jobs table might need to automatically create new table when too many jobs stack up  
